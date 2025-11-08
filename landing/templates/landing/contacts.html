@@ -1,0 +1,61 @@
+{% extends 'landing/base.html' %}
+
+{% block title %}Контакты - TechSolutions{% endblock %}
+
+{% block content %}
+<h1>Свяжитесь с нами</h1>
+<p>Мы всегда рады ответить на ваши вопросы и обсудить возможности сотрудничества. Выберите удобный способ связи с нами.</p>
+
+<div class="contact-info">
+    <div class="contact-card">
+        <h3>📧 Email</h3>
+        <p>info@techsolutions.ru</p>
+        <p>support@techsolutions.ru</p>
+    </div>
+    <div class="contact-card">
+        <h3>📞 Телефон</h3>
+        <p>+7 (495) 123-45-67</p>
+        <p>+7 (800) 123-45-67</p>
+    </div>
+    <div class="contact-card">
+        <h3>📍 Адрес</h3>
+        <p>г. Москва, ул. Технологическая, д. 15</p>
+        <p>БЦ "Инновации", офис 301</p>
+    </div>
+    <div class="contact-card">
+        <h3>🕒 Часы работы</h3>
+        <p>Пн-Пт: 9:00 - 18:00</p>
+        <p>Сб-Вс: Выходной</p>
+    </div>
+</div>
+
+<h2>Напишите нам</h2>
+<p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время.</p>
+
+<form style="max-width: 600px; margin: 2rem 0;">
+    <div style="margin-bottom: 1rem;">
+        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Ваше имя:</label>
+        <input type="text" id="name" name="name" required 
+               style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email:</label>
+        <input type="email" id="email" name="email" required 
+               style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem;">
+    </div>
+    <div style="margin-bottom: 1rem;">
+        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Сообщение:</label>
+        <textarea id="message" name="message" rows="5" required 
+                  style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem; resize: vertical;"></textarea>
+    </div>
+    <button type="submit" class="btn" style="border: none; cursor: pointer;">Отправить сообщение</button>
+</form>
+
+<h2>Мы в социальных сетях</h2>
+<div style="display: flex; gap: 1rem; margin: 1rem 0;">
+    <a href="#" class="btn" style="text-decoration: none;">LinkedIn</a>
+    <a href="#" class="btn" style="text-decoration: none;">Telegram</a>
+    <a href="#" class="btn" style="text-decoration: none;">GitHub</a>
+</div>
+{% endblock %}
+
