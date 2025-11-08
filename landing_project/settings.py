@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',  # Our landing page app
+    'first_app',  # First application
+    'second_app',  # Second application
 ]
 
 MIDDLEWARE = [
